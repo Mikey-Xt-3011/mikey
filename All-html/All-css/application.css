@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   background-image: url(https://img.freepik.com/free-photo/html-system-website-concept_23-2150376770.jpg?w=1060&t=st=1702739133~exp=1702739733~hmac=63c27181cf4bdc81b24dec04e3ed09ee1b490422098901d42d8eb44b67e27be9);
+}
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.box{
+    max-width:600px;
+    padding: 30px;
+    background-color: chocolate;
+    margin: 0;
+    margin-top: 80px;
+    box-shadow: 4px 4px 4px black;
+    border-radius: 10px;
+}
+.little{
+    font-size: 20px;
+}
+.form-box{
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit ,minmax(200px, 1fr));
+    gap: 20px;
+}
+.f1{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+input,select,textarea{
+    padding: 6px 4px;
+    border: 3px solid yellow;
+    border-radius: 5px;
+    font-size: 13px;
+}
+input:focus{
+    outline-color: green;
+}
+.bottom{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    gap: 4px;
+    
+}
+button{
+    background-color:#829A9B;
+    border: transparent solid 2px;
+    padding: 5px 10px;
+    color:sollid black;
+    border-radius: 8px;
+    transition: 0.3s ease-in;
+    justify-content: flex-end;
+}
+button:hover{
+    background-color:green;
+    border:  3px solid red;
+    color: black;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+.textarea_control{
+   grid-column: 1/span 2;
+}
+.textarea_control textarea{
+    width: 100%;
+}
+@media (max-width: 460px) 
+{
+    textarea_control{
+        grid-column: 1/span 1;
+    }
+};

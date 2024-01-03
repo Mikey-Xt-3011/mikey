@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" href="./All-css/application.css">
+</head>
+<body>
+    <div class="container">
+      <div class="box">
+     <h1> APPLICATION-FORM
+     <span class="little">(web)</span>
+    </h1>
+    <form action="./java.php">
+        <div class="form-box">
+            <div class="f1">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname">
+            </div>
+        <div class="f1">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname">
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div>
+           <label for="job">Job Role</label> 
+           <select name="job_role" id="job_role" aria-placeholder="Select Role">
+            <option value="Select Job Role">Select Job Role</option>
+            <option value="Devoloper">Devoloper</option>
+            <option value="hr">Hr</option>
+            <option value="Hacker">Hacker</option>
+            <option value="Designer">Designer</option>
+           </select>
+        </div>
+        <div class="textarea_control">
+            <label for="adress">Adress</label>
+            <textarea name="adress" id="" cols="75" rows="2.2"></textarea>
+        </div>
+        <div class="f1">
+            <label for="city">City</label>
+            <input type="text" name="city" id="cit">
+        </div>
+        <div class="f1">
+            <label for="pin">Enter Pincode</label>
+            <input type="number" name="pincode" id="pincode">
+        </div>
+        <div class="f1">
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="dob">
+            
+        </div>
+        <div class="f1">
+            <label for="upload">Upload Your CV</label>
+            <input type="file" name="upload" id="upload">  
+        </div >
+        <div class="bottom">
+            <button type="submit">Applyy</button>
+            <button type="reset">Reset</button>
+        </div>
+        </div>
+        
+    </form>
+      </div>
+    </div>
+</body>
+</html>

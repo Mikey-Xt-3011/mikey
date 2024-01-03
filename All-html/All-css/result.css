@@ -1,0 +1,104 @@
+
+.main{
+    display: flex;
+    margin: 6vh ;
+    height: 60vh;
+    font-family: url(https://fonts.google.com/specimen/Hanken+Grotesk); ;
+    font-size: 20px;
+    font-weight: 555; 
+    position: relative;
+    position: fixed;
+}
+.body{
+    width: 80%vh;
+    height: 80vh;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin: 60px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.842);
+     position: relative;
+     border-radius: 10px;  
+}
+
+body{
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/2177904685/display_1500/stock-photo-programming-web-pages-with-html-and-css-code-on-a-desktop-computer-d-rendering-2177904685.jpg);
+     
+}
+.right
+{
+    background-color: blue;
+    width: 25vh;
+    border-radius: 27px;
+    margin-top: 30px;
+    margin-left: 50vh;
+    text-align: center;
+    padding: 40px;
+    color: white;    
+}
+.left{
+    background-color: ight lavender hsl(241, 100%, 89%);
+    text-align: center;
+    margin-top: 35px;
+    background-color:white;
+    border-radius: 10px;
+    font-weight: 500 400; 
+    box-shadow: 2px 4px black;
+}
+.down{
+    padding: 50px;
+    background-color:  hsla(224, 74%, 34%, 0.26);
+    border-radius: 200%;
+    margin-top: 30px;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+.one{
+  font-size: 14px;
+  font-weight: 500;
+}
+button
+{
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    margin-top: 30px;
+    font-size: x-large;
+    border-radius: 20px;
+    height: 60px;
+    width: 200px;
+    background-color: rgb(49, 234, 16);
+    color: white;
+}
+button:hover{
+    color:black;
+    background-color:lightgreen;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: scale(1.1);
+}
+.icon img{
+    display: flex;
+    display: inline;
+    width: 18px;
+    margin-left: 0px; 
+}
+h3{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 9vh;
+    margin-bottom: 0vh;
+    color: rgb(9, 9, 89);
+}
+p{
+  display: flex;
+  margin-left: 29px;
+}
+span{
+    word-spacing: 80px;
+    text-align: end;
+}
+.c1{
+    word-spacing: 95px; 
+}
