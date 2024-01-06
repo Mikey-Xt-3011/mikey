@@ -418,4 +418,4 @@ function change()
   // if place is greater than the list size, reset
   if (place === colorList.length) place = 0;
 }
-alert("Sorry🙇 This movies Doesn't have links")//alert before open website
+alert("Sorry🙇 This Anime Doesn't have links")//alert before open website
