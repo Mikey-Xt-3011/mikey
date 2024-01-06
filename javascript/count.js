@@ -8,12 +8,19 @@ function incr() {
   } else {
     alert("you can't increase than 15😝");
   }
+  if(count++ % 2==0){
+  para[2].textcontent="even";
+  }
+  else{
+    para[2].textContent="odd";
+  }
 }
 function decr() {
-  if (count > 0) {
+  if(count > 0) {
     count--;
     para[0].textContent = count;
     para[1].textContent = "decreased";
+  
   } else {
     alert("don't decrease than zero😒");
   }
@@ -22,6 +29,7 @@ function reset() {
   let count = 0;
   para[0].textContent = count;
   para[1].textContent = "";
+
 }
 
 place = 0;
