@@ -1,0 +1,229 @@
+@mixin glassmorphism()
+{
+    background: rgba(255,255,255,0.25);
+    ::backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-left: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.2);
+}
+html,body{
+    height: 100%;
+}
+.bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(circle at 30% 86%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03)
+     8%,transparent 8%, transparent 92%),radial-gradient(circle at 55% 100%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03)
+      8%,transparent 8%, transparent 92%),radial-gradient(circle at 40% 75%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03)
+       6%,transparent 6%, transparent 94%),radial-gradient(circle at 7% 99%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03)
+        6%,transparent 6%, transparent 94%),radial-gradient(circle at 69% 76%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03)
+         6%,transparent 6%, transparent 94%),radial-gradient(circle at 2% 35%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03)
+          6%,transparent 6%, transparent 94%),radial-gradient(circle at 14% 48%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 
+          6%,transparent 6%, transparent 94%),radial-gradient(circle at 28% 87%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04)
+           4%,transparent 4%, transparent 96%),radial-gradient(circle at 65% 14%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 
+           4%,transparent 4%, transparent 96%),radial-gradient(circle at 51% 36%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04)
+            4%,transparent 4%, transparent 96%),radial-gradient(circle at 6% 93%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04)
+             4%,transparent 4%, transparent 96%),linear-gradient(135deg, rgb(23, 233, 173),rgb(29, 24, 208));
+}
+body{
+  
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+}
+.form-signin{
+    width: 100%;
+    max-width: 330px;
+    margin-left: 76vh;
+    border-radius: 3px;
+    @include glassmorphism();
+    border-radius: 3px;
+}
+.h1{
+    background: linear-gradient(90deg,#000,#fff,#000);
+    letter-spacing: 2px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}
+@keyframes shine {
+   0%{
+    background-position-x: -500%;
+   }  
+   100%{
+    background-position-x: 500%;
+   }  
+}
+@media (max-width: 575.98px) {
+    .h1{
+        
+        background: linear-gradient(90deg,#000,#fff,#000);
+        letter-spacing: 1px;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: shine 5s linear infinite;
+        position: relative;
+    }
+    
+}
+
+h1{
+    text-transform:uppercase;
+   letter-spacing: 0.7rem;
+    margin-top: 0px;
+    border-radius: 3px;
+    border-radius: 3px;
+    color: #ffff;
+    text-align: center;
+    .h3{
+      position: relative;
+    }
+    
+}
+.h3 span
+    {
+        position: relative;
+        display: inline-block;
+        animation: flip 2s infinite;
+        animation-delay: calc(.2s);
+    }
+@keyframes flip {
+    0%,80%{
+      transform: rotateY(360deg);
+    }
+}
+form{
+    padding: 15px;
+    .btn{
+        
+        &:hover, &:focus{
+            background: rgba(255,255,255,0.01);
+            box-shadow: #a2d2ff;
+        }
+    }
+    .form-control{
+        background: rgba(255,255,255,0.09);
+    }
+    .form-check
+    {
+        display: flex;
+        align-items: center;
+        color: rgba(255,255,255,0.65);
+        label{
+            font-size: 0.9rem;
+        }
+        input{
+            margin-right: 0.5rem;
+        }
+        &:checked{
+            background-color: #9ce060;
+            background-color: #81c63f;
+        }
+    }
+}
+section{
+    display: flex;
+    column-gap: 0px;
+    align-items: center;
+    margin-top: 2px;
+    padding: 2px;
+     
+}
+section input{
+    margin-left: 110px;
+    
+}
+section span{
+    
+     margin-top: -2.6px;
+    margin-left: -9px;
+
+   
+} 
+.form-floating{
+    &:focus-within{
+        z-index: 2;
+    }
+}
+input[type="email"]
+{
+    margin-bottom: -1px;
+    border-radius: 10px;
+}
+input[type="password"]
+{
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+button.w-100{
+    border-radius: 10px;
+    transition: 0.2s;
+    transition: ease-in-out;
+    border: white;
+}
+button.w-100:hover{
+    transform: scale(1.1);
+    color:white;
+    background: linear-gradient(to left,#03045e,#90e0ef);
+}
+.btn4{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    
+    margin-top: 7px;
+    
+    font-size: 15px;
+   
+   .forgot,.create{
+    border-radius: 8px;
+    color: white;
+    background-color: #0077b6;
+    transition: 2ms;
+    
+   }
+   a{
+    color: white;
+    text-decoration: none;
+   }
+}
+.forgot:hover{
+    transform: scale(1.1);
+    color: black;
+    background: white;
+}
+.create:hover{
+    transform: scale(1.1);
+    color: black;
+    background: white;
+}
+
+@media (max-width: 575.98px)
+ { 
+    .form-signin{
+        width: 100%;
+    max-width: 330px;
+    border-radius: 3px;
+        margin-left: auto;
+    }
+
+}
+img{
+    
+   margin-top: -10px;
+    width: 20px;
+    height: 20px;
+}

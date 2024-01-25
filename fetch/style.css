@@ -1,0 +1,122 @@
+/* html,body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    
+    background-color:#f9f7f3;/*background color*/ 
+}
+/*header */
+#header{
+    display: flex;
+    justify-content: space-between;
+    background:linear-gradient(to bottom,#dc2f02 ,#ffff  );
+    align-items: center;
+    img{
+        height: inherit;
+        width: 300px;
+        box-sizing: border-box;
+        filter: drop-shadow(3px 3px 10px #212529);
+       
+    }
+
+}
+/*button one */
+#btn1{
+   margin-top: -36px;
+   height:120px;
+   width: 100px;
+   font-size: 60px;
+   border-radius: 10px;
+}
+/*h1 */
+h1{
+    font-size: 170px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform:uppercase;
+}
+/*top of the body list items*/
+#list{
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 115vh;
+    button{
+        font-size: 3rem;
+        font-weight: 300;
+    height: 120px;
+    width: 170px;
+    color: #dc2f02;
+    border-radius: 20px;
+    }
+    a{
+        text-decoration: none;
+        color:#dc2f02 ;
+    }
+    a:hover{
+        color: #f9f7f3;
+    }
+    p{
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 10px;
+        justify-content: center;
+        height: 110px;
+        width: 120px;
+        font-size: 5.6rem;
+        background-color: white;
+    }
+}
+#list button:hover{
+    background-color: #4361ee;
+    color: black;
+   transition: 0ms;
+}
+    #result{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+
+}
+/*main*/
+#result{
+  
+    padding: 200px 500px;
+}
+.subDiv{
+    padding: 100px, auto;
+   
+        filter: drop-shadow(10px 10px 10px #212529);
+      
+   h2{
+      padding-top: 20px;
+     font-size: 60px;
+   }
+   h3{
+      font-size: 80px;
+   }
+
+}
+img{
+    height: 1200px;
+    width: 1200px;
+   
+}
+img:hover{
+    transform: scale(1.1);
+    transition: 2s ease-in-out;
+}
+#btn2{
+    width: 200px;
+    height: 300px;
+    font-size: 50px;
+    background-color: #4361ee;
+    color: cornsilk;
+    border-radius: 15px;
+    margin-left: 80px;
+}
+button:hover{
+    transform: scale(1.07);
+    transition: 0ms ease-in;
+}
+.subdiv{
+    align-items: center;
+} 
