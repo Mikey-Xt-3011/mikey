@@ -1,0 +1,15 @@
+{
+    "Bakery":[
+        {
+            "id":1,
+            "name":"cool cake",
+            "Price":200
+
+        },
+        {
+            "id":2,
+            "name":"choclate cake",
+            "Price":300
+        }
+    ]
+}
